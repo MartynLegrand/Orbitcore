@@ -17,5 +17,6 @@
   "autoPairMarkdown": true,
   "smartIndentList": true,
   "useTab": true,
-  "autoConvertHtml": true
+  "autoConvertHtml": true,
+  "promptDelete": false
 }
