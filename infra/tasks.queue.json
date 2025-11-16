@@ -1,0 +1,47 @@
+{
+  "schema": "obm-tasks-queue-v1",
+  "tasks": [
+    {
+      "id": "openapi-all",
+      "title": "Gerar OpenAPI para todos os módulos restantes",
+      "description": "Criar/atualizar specs OpenAPI (chat, orchestrator, analytics, search, files, telemetry, wallet, accounts, music-demos, streaming, nft, billing, permissions)",
+      "urgency": 5,
+      "importance": 5,
+      "deadline": "2025-11-30T23:59:00Z",
+      "commands": [
+        {
+          "shell": "powershell",
+          "run": "Write-Host 'Gerar OpenAPI restantes (placeholder)'; exit 0"
+        }
+      ],
+      "dependencies": [],
+      "status": "pending"
+    },
+    {
+      "id": "sdks-expand",
+      "title": "Expandir SDKs TS/Python",
+      "description": "Adicionar métodos payments/notifications/chat; testes e publicação pre-release",
+      "urgency": 4,
+      "importance": 5,
+      "deadline": "2025-12-05T23:59:00Z",
+      "commands": [
+        { "shell": "powershell", "run": "Write-Host 'SDKs expand (placeholder)'; exit 0" }
+      ],
+      "dependencies": ["openapi-all"],
+      "status": "pending"
+    },
+    {
+      "id": "readmes-boot",
+      "title": "READMEs Boot Local por módulo",
+      "description": "Adicionar instruções de execução local via compose para cada módulo",
+      "urgency": 3,
+      "importance": 4,
+      "deadline": "2025-12-10T23:59:00Z",
+      "commands": [
+        { "shell": "powershell", "run": "Write-Host 'READMEs boot local (placeholder)'; exit 0" }
+      ],
+      "dependencies": [],
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "maxConcurrent": 5,
+  "cpuThreshold": 85,
+  "ramThreshold": 80,
+  "agingCoef": 0.05,
+  "retryPolicy": { "maxRetries": 3, "initialDelaySeconds": 5, "factor": 2 },
+  "channels": { "notifications": true, "webhook": false },
+  "shards": [
+    "infra/tasks.queue.json",
+    "infra/tasks.queue.part-1.json",
+    "infra/tasks.queue.part-2.json",
+    "infra/tasks.queue.part-3.json",
+    "infra/tasks.queue.part-4.json",
+    "infra/tasks.queue.part-5.json",
+    "infra/tasks.queue.part-6.json"
+  ]
+}

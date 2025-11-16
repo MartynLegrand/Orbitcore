@@ -1,0 +1,56 @@
+version: '3.9'
+services:
+  obm-auth:
+    build: ./services/obm-auth
+    env_file: ./infra/.env
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "3001:3001"
+    healthcheck:
+      test: ["CMD-SHELL","curl -f http://obm-auth:3001/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  obm-payments:
+    build: ./services/obm-payments
+    env_file: ./infra/.env
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "3002:3002"
+    healthcheck:
+      test: ["CMD-SHELL","curl -f http://obm-payments:3002/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  obm-notifications:
+    build: ./services/obm-notifications
+    env_file: ./infra/.env
+    depends_on:
+      - redis
+    ports:
+      - "3003:3003"
+    healthcheck:
+      test: ["CMD-SHELL","curl -f http://obm-notifications:3003/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: obm
+      POSTGRES_PASSWORD: obm
+      POSTGRES_DB: obm
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+volumes:
+  pgdata:

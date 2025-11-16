@@ -1,0 +1,78 @@
+ deopenapi: 3.0.3
+info:
+  title: obm-notifications API
+  version: v1
+servers:
+  - url: http://localhost:3003
+paths:
+  /api/notify/send:
+    post:
+      summary: Send notification
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SendResponse'
+  /api/notify/preferences:
+    get:
+      summary: Get preferences
+      parameters:
+        - name: userId
+          in: query
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PreferencesResponse'
+components:
+  schemas:
+    Meta:
+      type: object
+      properties:
+        version: { type: string }
+        traceId: { type: string }
+        timestamp: { type: string, format: date-time }
+    SendRequest:
+      type: object
+      required: [channel, to, templateId]
+      properties:
+        channel: { type: string, enum: [email, sms, push] }
+        to: { type: string }
+        templateId: { type: string }
+        data: { type: object }
+        idempotencyKey: { type: string }
+    SendResponse:
+      type: object
+      properties:
+        status: { type: string, enum: [success] }
+        data:
+          type: object
+          properties:
+            messageId: { type: string }
+        meta: { $ref: '#/components/schemas/Meta' }
+    PreferencesResponse:
+      type: object
+      properties:
+        status: { type: string, enum: [success] }
+        data:
+          type: object
+          properties:
+            channels:
+              type: object
+              properties:
+                email: { type: boolean }
+                sms: { type: boolean }
+                push: { type: boolean }
+        meta: { $ref: '#/components/schemas/Meta' }

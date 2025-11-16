@@ -1,0 +1,114 @@
+openapi: 3.0.3
+info:
+  title: OBM Permissions API
+  version: 1.0.0
+  description: Gestão de roles e permissões (RBAC) com feature flags
+servers:
+  - url: https://api.orbitbm.com/api/permissions
+paths:
+  /roles:
+    get:
+      summary: Listar roles disponíveis
+      responses:
+        '200':
+          description: Lista de roles
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrbitResponse'
+  /assign:
+    post:
+      summary: Atribuir role a usuário
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [userId, role]
+              properties:
+                userId:
+                  type: string
+                role:
+                  type: string
+                idempotencyKey:
+                  type: string
+      responses:
+        '200':
+          description: Role atribuída
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrbitResponse'
+  /policies:
+    get:
+      summary: Obter políticas de uma role
+      parameters:
+        - in: query
+          name: role
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: resource
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Lista de políticas
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrbitResponse'
+  /check:
+    post:
+      summary: Verificar permissão
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [userId, resource, action]
+              properties:
+                userId:
+                  type: string
+                resource:
+                  type: string
+                action:
+                  type: string
+                context:
+                  type: object
+      responses:
+        '200':
+          description: Resultado da verificação
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrbitResponse'
+components:
+  schemas:
+    OrbitResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [success, error]
+        data:
+          type: object
+        error:
+          type: object
+          properties:
+            code:
+              type: string
+            message:
+              type: string
+        meta:
+          type: object
+          properties:
+            version:
+              type: string
+            traceId:
+              type: string
+            timestamp:
+              type: string

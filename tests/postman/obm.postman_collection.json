@@ -1,0 +1,8 @@
+{
+  "info": { "name": "OBM Integrated", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "item": [
+    {"name": "Auth Health", "request": {"method": "GET", "url": "http://localhost:3001/health"}},
+    {"name": "Payments Health", "request": {"method": "GET", "url": "http://localhost:3002/health"}},
+    {"name": "Notifications Health", "request": {"method": "GET", "url": "http://localhost:3003/health"}}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "folderRules": [
+    { "folder": "Empresa", "icon": "lucide-building" },
+    { "folder": "Negócios", "icon": "lucide-briefcase" },
+    { "folder": "Comercial", "icon": "lucide-file-text" },
+    { "folder": "Pricing", "icon": "lucide-dollar-sign" },
+    { "folder": "Templates", "icon": "lucide-layers" },
+    { "folder": "Painéis-Geradores", "icon": "lucide-layout-dashboard" },
+    { "folder": "Glossário", "icon": "lucide-book" },
+    { "folder": "Aprendizado", "icon": "lucide-graduation-cap" },
+    { "folder": "Vida", "icon": "lucide-heart-pulse" },
+    { "folder": "SFINACAS", "icon": "lucide-server" },
+    { "folder": "Assets", "icon": "lucide-image" }
+  ],
+  "noteRules": [
+    { "property": "type", "equals": "briefing", "icon": "lucide-file" },
+    { "property": "type", "equals": "comercial-orcamento", "icon": "lucide-calculator" },
+    { "property": "type", "equals": "comercial-proposta", "icon": "lucide-file-text" },
+    { "property": "type", "equals": "comercial-contrato", "icon": "lucide-scroll" },
+    { "property": "type", "equals": "pricing", "icon": "lucide-dollar-sign" },
+    { "property": "type", "equals": "dashboard", "icon": "lucide-layout-dashboard" },
+    { "property": "type", "equals": "glossario", "icon": "lucide-book" },
+    { "property": "type", "equals": "aprendizado-journal", "icon": "lucide-notebook" },
+    { "property": "service_category", "equals": "mapas-3d-eventos", "icon": "lucide-cuboid" },
+    { "property": "service_category", "equals": "arquitetura-arqvis", "icon": "lucide-building" },
+    { "property": "service_category", "equals": "marketing-comunicacao", "icon": "lucide-megaphone" },
+    { "property": "service_category", "equals": "criacao-publicitaria-3d", "icon": "lucide-clapperboard" },
+    { "property": "service_category", "equals": "consultorias", "icon": "lucide-user-check" },
+    { "property": "service_category", "equals": "vfx-cgi", "icon": "lucide-film" },
+    { "property": "service_category", "equals": "aceleracao-negocios", "icon": "lucide-rocket" },
+    { "property": "service_category", "equals": "sites-apps", "icon": "lucide-code" },
+    { "property": "service_category", "equals": "sistemas-aplicativos", "icon": "lucide-server" }
+  ]
+}

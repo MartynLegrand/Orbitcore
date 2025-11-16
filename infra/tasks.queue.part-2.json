@@ -1,0 +1,7 @@
+{
+  "schema": "obm-tasks-queue-v1",
+  "tasks": [
+    {"id":"files-openapi","title":"Gerar OpenAPI obm-files","urgency":3,"importance":4,"deadline":"2025-12-02T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI files'"}],"dependencies":[],"status":"pending"},
+    {"id":"telemetry-openapi","title":"Gerar OpenAPI obm-telemetry","urgency":3,"importance":4,"deadline":"2025-12-02T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI telemetry'"}],"dependencies":[],"status":"pending"}
+  ]
+}

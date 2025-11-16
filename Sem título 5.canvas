@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"02709cd661532926","type":"file","file":"07-Receitas-e-Playbooks/CONTRIBUTING.md","x":-80,"y":-780,"width":400,"height":400},
+		{"id":"6a59c3ae3d37334f","type":"file","file":"03-Modulos-OBM/obm-chat.boot.local.md","x":-410,"y":-1440,"width":660,"height":540}
+	],
+	"edges":[
+		{
+			"id":"94f58e4a6b8a88c8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"02709cd661532926",
+			"fromSide":"top",
+			"toNode":"6a59c3ae3d37334f",
+			"toSide":"bottom",
+			"color":"4"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "title": "BullMQ Queues",
+  "tags": ["bullmq","queues"],
+  "panels": [
+    {"type":"timeseries","title":"Queue Depth","targets":[{"expr":"bullmq_queue_depth"}]},
+    {"type":"stat","title":"Failures","targets":[{"expr":"sum(bullmq_job_failures)"}]}
+  ]
+}

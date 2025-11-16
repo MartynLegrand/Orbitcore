@@ -1,0 +1,23 @@
+{
+  "version": 4,
+  "homepages": {
+    "Main Homepage": {
+      "value": "Home",
+      "kind": "File",
+      "openOnStartup": true,
+      "openMode": "Replace all open notes",
+      "manualOpenMode": "Keep open notes",
+      "view": "Editing view (Source)",
+      "revertView": true,
+      "openWhenEmpty": false,
+      "refreshDataview": true,
+      "autoCreate": true,
+      "autoScroll": false,
+      "pin": true,
+      "commands": [],
+      "alwaysApply": false,
+      "hideReleaseNotes": true
+    }
+  },
+  "separateMobile": false
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Webhooks",
+  "tags": ["webhooks"],
+  "panels": [
+    {"type":"stat","title":"Valid Signatures","targets":[{"expr":"sum(rate(webhook_valid_signatures_total[5m]))"}]},
+    {"type":"stat","title":"Invalid Signatures","targets":[{"expr":"sum(rate(webhook_invalid_signatures_total[5m]))"}]},
+    {"type":"stat","title":"Replay Attempts","targets":[{"expr":"sum(rate(webhook_replay_attempts_total[5m]))"}]}
+  ]
+}

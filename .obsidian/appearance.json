@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Royal Velvet",
+  "accentColor": "#95e8f9",
+  "enabledCssSnippets": [
+    "icons-dracula",
+    "pastel-dracula",
+    "trae"
+  ],
+  "theme": "obsidian",
+  "baseFontSizeAction": true,
+  "baseFontSize": 16,
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "showRibbon": true
+}

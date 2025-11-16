@@ -1,0 +1,123 @@
+:root {
+  --trae-bg: #282a36;
+  --trae-fg: #f8f8f2;
+  --trae-primary: #bd93f9;
+  --trae-accent: #8be9fd;
+  --trae-success: #50fa7b;
+  --trae-warning: #ffb86c;
+  --trae-danger: #ff5555;
+  --trae-pink: #ff79c6;
+  --trae-yellow: #f1fa8c;
+  --neutral-100: #44475a;
+  --neutral-200: #3b3e4a;
+}
+
+.note-header {
+  border: 1px solid var(--neutral-100);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: rgba(68, 71, 90, 0.25);
+  margin: 8px 0 16px 0;
+}
+
+.note-usage {
+  border-left: 4px solid var(--trae-primary);
+  background: rgba(68, 71, 90, 0.35);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 16px 0;
+}
+table thead th {
+  background: var(--neutral-100);
+  color: var(--trae-fg);
+}
+table th, table td {
+  border: 1px solid var(--neutral-100);
+  padding: 8px;
+}
+
+.markdown-preview-view h1 {
+  color: var(--trae-pink);
+  border-bottom: 1px solid var(--trae-primary);
+}
+.markdown-preview-view h2 {
+  color: var(--trae-accent);
+  border-bottom: 1px solid var(--neutral-100);
+}
+.markdown-preview-view h3 {
+  color: var(--trae-warning);
+  border-bottom: 1px solid var(--neutral-100);
+}
+
+.markdown-preview-view img {
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.markdown-preview-view video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.internal-embed {
+  border: 1px solid var(--neutral-100);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.embed-caption {
+  font-size: 0.85rem;
+  color: var(--trae-fg);
+  opacity: 0.9;
+  padding: 6px 10px;
+  background: var(--neutral-100);
+}
+
+.markdown-preview-view pre {
+  background: var(--neutral-100);
+  border-radius: 8px;
+  border: 1px solid rgba(189, 147, 249, 0.35);
+}
+
+.markdown-preview-view code {
+  background: rgba(68, 71, 90, 0.5);
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+a { color: var(--trae-accent); }
+a:hover { color: var(--trae-pink); }
+
+blockquote {
+  border-left: 4px solid var(--trae-primary);
+  background: rgba(68, 71, 90, 0.35);
+}
+
+.tag {
+  background: rgba(139, 233, 253, 0.15);
+  color: var(--trae-accent);
+}
+
+a.link-briefing { color: var(--trae-primary); }
+a.link-servico-mapas-3d-eventos { color: var(--trae-accent); }
+a.link-servico-arquitetura-arqvis { color: var(--trae-primary); }
+a.link-servico-marketing-comunicacao { color: var(--trae-warning); }
+a.link-servico-criacao-publicitaria-3d { color: var(--trae-pink); }
+a.link-servico-consultorias { color: var(--trae-success); }
+a.link-servico-vfx-cgi { color: var(--trae-danger); }
+a.link-servico-aceleracao-negocios { color: var(--trae-success); }
+a.link-servico-sites-apps { color: var(--trae-accent); }
+a.link-servico-sistemas-aplicativos { color: var(--trae-primary); }
+a.link-financa { color: var(--trae-warning); }
+a.link-contato { color: var(--trae-accent); }
+a.link-okr { color: var(--trae-success); }
+a.link-habito { color: var(--trae-success); }
+a.link-journal { color: var(--trae-pink); }
+a.link-menstruacao { color: var(--trae-yellow); }
+a.link-glossario { color: var(--trae-primary); }

@@ -1,0 +1,50 @@
+{
+  "logoType": "imagePath",
+  "logo": {
+    "lucideIcon": "",
+    "imagePath": "",
+    "imageLink": ""
+  },
+  "logoScale": 1.2,
+  "iconColorType": "default",
+  "wordmark": "Obsidian",
+  "customFont": "interfaceFont",
+  "fontSize": "4em",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 9,
+  "showbookmarkedFiles": true,
+  "showRecentFiles": false,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": false,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "03-Modulos-OBM/obm-accounts.md",
+      "timestamp": 1763264991988
+    },
+    {
+      "filepath": "PROMPT_MASTER_Consolidar_Decisoes_para_Documentacao.md",
+      "timestamp": 1763264601335
+    },
+    {
+      "filepath": "PROMPT_MASTER_PONTA_A_PONTA_Documentacao_Final.md",
+      "timestamp": 1763264594363
+    },
+    {
+      "filepath": "00-Config/02-Como-Usar-Este-Vault.md",
+      "timestamp": 1763264593080
+    }
+  ],
+  "bookmarkedFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": false,
+  "closePreviousSessionTabs": false,
+  "omnisearch": false,
+  "showOmnisearchExcerpt": true
+}

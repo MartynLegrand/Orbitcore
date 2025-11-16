@@ -1,0 +1,9 @@
+syntax = "proto3";
+package example;
+
+service Processor {
+  rpc Process (ProcessRequest) returns (ProcessResponse) {}
+}
+
+message ProcessRequest { string input = 1; }
+message ProcessResponse { string output = 1; }

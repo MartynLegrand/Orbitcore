@@ -1,0 +1,21 @@
+{
+  "alwaysUpdateLinks": false,
+  "useMarkdownLinks": false,
+  "showUnsupportedFiles": true,
+  "showInlineTitle": false,
+  "focusNewTab": true,
+  "readableLineLength": false,
+  "strictLineBreaks": false,
+  "propertiesInDocument": "visible",
+  "foldHeading": true,
+  "foldIndent": true,
+  "showLineNumber": false,
+  "showIndentGuide": true,
+  "rightToLeft": false,
+  "spellcheck": true,
+  "autoPairBrackets": true,
+  "autoPairMarkdown": true,
+  "smartIndentList": true,
+  "useTab": true,
+  "autoConvertHtml": true
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "obm-tasks-queue-v1",
+  "tasks": [
+    {"id":"security-modules","title":"Diretrizes de segurança por módulo","urgency":4,"importance":5,"deadline":"2025-12-08T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Segurança por módulo'"}],"dependencies":[],"status":"pending"},
+    {"id":"governance","title":"CONTRIBUTING/CHANGELOG/RELEASE","urgency":3,"importance":4,"deadline":"2025-12-09T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Governança'"}],"dependencies":[],"status":"pending"},
+    {"id":"glossary-extra","title":"Glossários CORS/Rate-Limit/Circuit-Breaker","urgency":3,"importance":4,"deadline":"2025-12-09T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Glossários extra'"}],"dependencies":[],"status":"pending"},
+    {"id":"starters-func","title":"Funcionalizar starters mínimos","urgency":3,"importance":4,"deadline":"2025-12-11T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Starters funcionalizados'"}],"dependencies":[],"status":"pending"},
+    {"id":"timeline-detail","title":"Linha do tempo detalhada do dossiê","urgency":2,"importance":3,"deadline":"2025-12-12T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Linha do tempo detalhada'"}],"dependencies":[],"status":"pending"}
+  ]
+}

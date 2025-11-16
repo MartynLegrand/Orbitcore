@@ -1,0 +1,7 @@
+{
+  "schema": "obm-tasks-queue-v1",
+  "tasks": [
+    {"id":"analytics-openapi","title":"Gerar OpenAPI obm-analytics","urgency":4,"importance":4,"deadline":"2025-12-01T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI analytics'"}],"dependencies":[],"status":"pending"},
+    {"id":"search-openapi","title":"Gerar OpenAPI obm-search","urgency":4,"importance":4,"deadline":"2025-12-01T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI search'"}],"dependencies":[],"status":"pending"}
+  ]
+}

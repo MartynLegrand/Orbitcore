@@ -1,0 +1,8 @@
+{
+  "schema": "obm-tasks-queue-v1",
+  "tasks": [
+    {"id":"payments-sdk-expand","title":"Expandir SDKs payments (TS/Py)","urgency":4,"importance":5,"deadline":"2025-12-05T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Expandir SDKs payments'"}],"dependencies":["payments-openapi"],"status":"pending"},
+    {"id":"notifications-sdk-expand","title":"Expandir SDKs notifications (TS/Py)","urgency":4,"importance":5,"deadline":"2025-12-05T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Expandir SDKs notifications'"}],"dependencies":["notifications-openapi"],"status":"pending"},
+    {"id":"chat-sdk-expand","title":"Expandir SDKs chat (TS/Py)","urgency":4,"importance":5,"deadline":"2025-12-05T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Expandir SDKs chat'"}],"dependencies":["chat-openapi"],"status":"pending"}
+  ]
+}

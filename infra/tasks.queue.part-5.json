@@ -1,0 +1,8 @@
+{
+  "schema": "obm-tasks-queue-v1",
+  "tasks": [
+    {"id":"dashboards-throughput","title":"Adicionar dashboards de throughput/erros por rota","urgency":3,"importance":4,"deadline":"2025-12-06T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Dashboards throughput'"}],"dependencies":[],"status":"pending"},
+    {"id":"alerts-slos","title":"Regras de alerta SLO p95/p99/filas","urgency":3,"importance":4,"deadline":"2025-12-06T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Alertas SLOs'"}],"dependencies":[],"status":"pending"},
+    {"id":"readmes-boot-modulos","title":"READMEs Boot Local por módulo","urgency":3,"importance":4,"deadline":"2025-12-10T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'READMEs Boot'"}],"dependencies":[],"status":"pending"}
+  ]
+}

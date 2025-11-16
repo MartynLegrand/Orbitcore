@@ -1,0 +1,22 @@
+{
+  "rules": [
+    { "property": "type", "equals": "briefing", "className": "link-briefing" },
+    { "property": "service_category", "equals": "mapas-3d-eventos", "className": "link-servico-mapas-3d-eventos" },
+    { "property": "service_category", "equals": "arquitetura-arqvis", "className": "link-servico-arquitetura-arqvis" },
+    { "property": "service_category", "equals": "marketing-comunicacao", "className": "link-servico-marketing-comunicacao" },
+    { "property": "service_category", "equals": "criacao-publicitaria-3d", "className": "link-servico-criacao-publicitaria-3d" },
+    { "property": "service_category", "equals": "consultorias", "className": "link-servico-consultorias" },
+    { "property": "service_category", "equals": "vfx-cgi", "className": "link-servico-vfx-cgi" },
+    { "property": "service_category", "equals": "aceleracao-negocios", "className": "link-servico-aceleracao-negocios" },
+    { "property": "service_category", "equals": "sites-apps", "className": "link-servico-sites-apps" },
+    { "property": "service_category", "equals": "sistemas-aplicativos", "className": "link-servico-sistemas-aplicativos" },
+
+    { "property": "type", "equals": "negocios-financa-transacao", "className": "link-financa" },
+    { "property": "type", "equals": "negocios-contato", "className": "link-contato" },
+    { "property": "type", "equals": "negocios-okr", "className": "link-okr" },
+    { "property": "type", "equals": "produtividade-habito", "className": "link-habito" },
+    { "property": "type", "equals": "aprendizado-journal", "className": "link-journal" },
+    { "property": "type", "equals": "vida-menstruacao", "className": "link-menstruacao" },
+    { "property": "type", "equals": "glossario", "className": "link-glossario" }
+  ]
+}

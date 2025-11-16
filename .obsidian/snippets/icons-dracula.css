@@ -1,0 +1,18 @@
+/* SVG mono icons mapped via mask for Dracula theme */
+.icon { display: inline-block; width: 18px; height: 18px; margin-right: 8px; vertical-align: -2px; background-color: var(--trae-fg); }
+.icon-escopo { -webkit-mask: url('Assets/icons/target.svg') no-repeat center; mask: url('Assets/icons/target.svg') no-repeat center; }
+.icon-requisitos { -webkit-mask: url('Assets/icons/wrench.svg') no-repeat center; mask: url('Assets/icons/wrench.svg') no-repeat center; }
+.icon-pipeline { -webkit-mask: url('Assets/icons/flow.svg') no-repeat center; mask: url('Assets/icons/flow.svg') no-repeat center; }
+.icon-entregaveis { -webkit-mask: url('Assets/icons/package.svg') no-repeat center; mask: url('Assets/icons/package.svg') no-repeat center; }
+.icon-cronograma { -webkit-mask: url('Assets/icons/calendar.svg') no-repeat center; mask: url('Assets/icons/calendar.svg') no-repeat center; }
+.icon-orcamento { -webkit-mask: url('Assets/icons/cash.svg') no-repeat center; mask: url('Assets/icons/cash.svg') no-repeat center; }
+.icon-proposta { -webkit-mask: url('Assets/icons/file-text.svg') no-repeat center; mask: url('Assets/icons/file-text.svg') no-repeat center; }
+.icon-contrato { -webkit-mask: url('Assets/icons/scroll.svg') no-repeat center; mask: url('Assets/icons/scroll.svg') no-repeat center; }
+.icon-cliente { -webkit-mask: url('Assets/icons/user.svg') no-repeat center; mask: url('Assets/icons/user.svg') no-repeat center; }
+.icon-servico { -webkit-mask: url('Assets/icons/layers.svg') no-repeat center; mask: url('Assets/icons/layers.svg') no-repeat center; }
+
+/* Emojis custom (OpenMoji/Noto) as inline images */
+.emoji-special { display:inline-block; width:18px; height:18px; margin-right:6px; background-size: contain; background-repeat:no-repeat; }
+.emoji-star { background-image: url('Assets/emojis/star.svg'); }
+.emoji-check { background-image: url('Assets/emojis/check.svg'); }
+.emoji-rocket { background-image: url('Assets/emojis/rocket.svg'); }

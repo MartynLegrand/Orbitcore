@@ -1,0 +1,14 @@
+{
+  "schema": "obm-tasks-queue-v1",
+  "tasks": [
+    {"id":"chat-openapi","title":"Gerar OpenAPI obm-chat","urgency":4,"importance":4,"deadline":"2025-12-01T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI chat'"}],"dependencies":[],"status":"pending"},
+    {"id":"orchestrator-openapi","title":"Gerar OpenAPI obm-orchestrator","urgency":4,"importance":4,"deadline":"2025-12-01T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI orchestrator'"}],"dependencies":[],"status":"pending"},
+    {"id":"wallet-openapi","title":"Gerar OpenAPI obm-wallet","urgency":3,"importance":4,"deadline":"2025-12-02T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI wallet'"}],"dependencies":[],"status":"pending"},
+    {"id":"accounts-openapi","title":"Gerar OpenAPI obm-accounts","urgency":3,"importance":4,"deadline":"2025-12-02T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI accounts'"}],"dependencies":[],"status":"pending"},
+    {"id":"music-demos-openapi","title":"Gerar OpenAPI obm-music-demos","urgency":3,"importance":3,"deadline":"2025-12-03T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Gerar OpenAPI music-demos'"}],"dependencies":[],"status":"pending"},
+    {"id":"streaming-openapi","title":"Refinar OpenAPI obm-streaming","urgency":3,"importance":4,"deadline":"2025-12-03T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Refinar OpenAPI streaming'"}],"dependencies":[],"status":"pending"},
+    {"id":"nft-openapi","title":"Refinar OpenAPI obm-nft-marketplace","urgency":3,"importance":4,"deadline":"2025-12-03T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Refinar OpenAPI nft'"}],"dependencies":[],"status":"pending"},
+    {"id":"billing-openapi","title":"Refinar OpenAPI obm-billing","urgency":3,"importance":4,"deadline":"2025-12-03T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Refinar OpenAPI billing'"}],"dependencies":[],"status":"pending"},
+    {"id":"permissions-openapi","title":"Refinar OpenAPI obm-permissions","urgency":3,"importance":4,"deadline":"2025-12-03T23:59:00Z","commands":[{"shell":"powershell","run":"Write-Host 'Refinar OpenAPI permissions'"}],"dependencies":[],"status":"pending"}
+  ]
+}

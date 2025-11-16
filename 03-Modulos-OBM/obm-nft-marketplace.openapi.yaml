@@ -1,0 +1,128 @@
+openapi: 3.0.3
+info:
+  title: OBM NFT Marketplace API
+  version: 1.0.0
+  description: Listagem, mint e negociação de NFTs com integração blockchain
+servers:
+  - url: https://api.orbitbm.com/api/nft
+paths:
+  /mint:
+    post:
+      summary: Criar novo NFT
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [metadata, ownerId]
+              properties:
+                metadata:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    description:
+                      type: string
+                    image:
+                      type: string
+                    attributes:
+                      type: array
+                      items:
+                        type: object
+                ownerId:
+                  type: string
+      responses:
+        '201':
+          description: NFT criado com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrbitResponse'
+  /listings:
+    get:
+      summary: Listar NFTs disponíveis
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+        - in: query
+          name: pageSize
+          schema:
+            type: integer
+            default: 20
+        - in: query
+          name: minPrice
+          schema:
+            type: number
+        - in: query
+          name: maxPrice
+          schema:
+            type: number
+        - in: query
+          name: category
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Lista de NFTs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrbitResponse'
+  /trade:
+    post:
+      summary: Negociar NFT
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [from, to, tokenId, price]
+              properties:
+                from:
+                  type: string
+                to:
+                  type: string
+                tokenId:
+                  type: string
+                price:
+                  type: string
+                idempotencyKey:
+                  type: string
+      responses:
+        '200':
+          description: Negociação realizada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrbitResponse'
+components:
+  schemas:
+    OrbitResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [success, error]
+        data:
+          type: object
+        error:
+          type: object
+          properties:
+            code:
+              type: string
+            message:
+              type: string
+        meta:
+          type: object
+          properties:
+            version:
+              type: string
+            traceId:
+              type: string
+            timestamp:
+              type: string
