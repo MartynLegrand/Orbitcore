@@ -1,0 +1,60 @@
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+node_modules/
+dist/
+build/
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+
+# IDE files (keep Obsidian and Trae specific ones)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# Environment files (keep .env.example)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Test coverage
+coverage/
+*.coverage
+
+# Obsidian workspace (personal)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Temporary analysis files (if needed)
+/tmp/
+.analysis-temp/
